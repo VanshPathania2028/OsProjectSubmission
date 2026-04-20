@@ -1,2 +1,2 @@
 # OsProjectSubmission
-File System revocery and Optimization recvoery tool
+File System revocery and Optimization tool
