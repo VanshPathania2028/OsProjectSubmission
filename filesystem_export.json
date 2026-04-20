@@ -1,0 +1,152 @@
+{
+  "timestamp": "2026-04-17T20:59:26.961807",
+  "filesystem": {
+    "total_blocks": 512,
+    "allocated_blocks": 1,
+    "free_blocks": 511,
+    "block_size": 4100,
+    "total_inodes": 3,
+    "allocated_inodes": 3,
+    "total_capacity_mb": 2.001953125
+  },
+  "inodes": {
+    "0": {
+      "inode_id": 0,
+      "filename": "/",
+      "file_size": 0,
+      "created_time": 1776439602.897152,
+      "modified_time": 1776439602.897152,
+      "accessed_time": 1776439602.897152,
+      "permissions": "rw-r--r--",
+      "owner": "root",
+      "block_pointers": [],
+      "is_directory": true,
+      "parent_inode": null,
+      "directory_entries": {
+        "Vansh.txt": 1,
+        "directory": 2
+      },
+      "is_allocated": true
+    },
+    "1": {
+      "inode_id": 1,
+      "filename": "Vansh.txt",
+      "file_size": 2048,
+      "created_time": 1776439632.904085,
+      "modified_time": 1776439665.694777,
+      "accessed_time": 1776439763.409583,
+      "permissions": "rw-r--r--",
+      "owner": "root",
+      "block_pointers": [
+        0
+      ],
+      "is_directory": false,
+      "parent_inode": 0,
+      "directory_entries": {},
+      "is_allocated": true
+    },
+    "2": {
+      "inode_id": 2,
+      "filename": "directory",
+      "file_size": 0,
+      "created_time": 1776439711.223437,
+      "modified_time": 1776439711.223437,
+      "accessed_time": 1776439711.223437,
+      "permissions": "rw-r--r--",
+      "owner": "root",
+      "block_pointers": [],
+      "is_directory": true,
+      "parent_inode": 0,
+      "directory_entries": {},
+      "is_allocated": true
+    }
+  },
+  "free_space": {
+    "total_blocks": 512,
+    "allocated_blocks": 1,
+    "free_blocks": 511,
+    "fragmentation_ratio": 0.001953125,
+    "num_gaps": 1,
+    "largest_gap": 511,
+    "smallest_gap": 511,
+    "largest_gap_blocks": 511
+  },
+  "statistics": {
+    "filesystem": {
+      "total_blocks": 512,
+      "allocated_blocks": 1,
+      "free_blocks": 511,
+      "block_size": 4100,
+      "total_inodes": 3,
+      "allocated_inodes": 3,
+      "total_capacity_mb": 2.001953125
+    },
+    "free_space": {
+      "total_blocks": 512,
+      "allocated_blocks": 1,
+      "free_blocks": 511,
+      "fragmentation_ratio": 0.001953125,
+      "num_gaps": 1,
+      "largest_gap": 511,
+      "smallest_gap": 511,
+      "largest_gap_blocks": 511
+    },
+    "cache": {
+      "cache_hits": 2,
+      "cache_misses": 1,
+      "hit_rate": 0.6666666666666666,
+      "cache_size": 5,
+      "max_cache_size": 128,
+      "read_operations": 3,
+      "write_operations": 2,
+      "avg_read_time_ms": 0.024239222208658855,
+      "avg_write_time_ms": 0.054836273193359375
+    },
+    "total_operations": 8,
+    "recovery_points": 1
+  },
+  "operation_log": [
+    {
+      "operation": "file_created",
+      "filename": "Vansh.txt",
+      "file_size": 2048,
+      "blocks_allocated": [
+        0
+      ]
+    },
+    {
+      "operation": "file_written",
+      "inode_id": 1,
+      "blocks_written": 1
+    },
+    {
+      "operation": "file_read",
+      "inode_id": 1,
+      "blocks_read": 1
+    },
+    {
+      "operation": "file_written",
+      "inode_id": 1,
+      "blocks_written": 1
+    },
+    {
+      "operation": "directory_created",
+      "dirname": "directory",
+      "inode_id": 2
+    },
+    {
+      "operation": "filesystem_recovered",
+      "checkpoint_id": 0
+    },
+    {
+      "operation": "file_read",
+      "inode_id": 1,
+      "blocks_read": 1
+    },
+    {
+      "operation": "file_read",
+      "inode_id": 1,
+      "blocks_read": 1
+    }
+  ]
+}

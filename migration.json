@@ -1,0 +1,213 @@
+{
+  "timestamp": "2026-04-14T21:25:33.767589",
+  "filesystem": {
+    "total_blocks": 512,
+    "allocated_blocks": 3,
+    "free_blocks": 509,
+    "block_size": 4096,
+    "total_inodes": 6,
+    "allocated_inodes": 6,
+    "total_capacity_mb": 2.0
+  },
+  "inodes": {
+    "0": {
+      "inode_id": 0,
+      "filename": "/",
+      "file_size": 0,
+      "created_time": 1776182133.767025,
+      "modified_time": 1776182133.767025,
+      "accessed_time": 1776182133.767025,
+      "permissions": "rw-r--r--",
+      "owner": "root",
+      "block_pointers": [],
+      "is_directory": true,
+      "parent_inode": null,
+      "directory_entries": {
+        "home": 1
+      },
+      "is_allocated": true
+    },
+    "1": {
+      "inode_id": 1,
+      "filename": "home",
+      "file_size": 0,
+      "created_time": 1776182133.767294,
+      "modified_time": 1776182133.767294,
+      "accessed_time": 1776182133.767294,
+      "permissions": "rw-r--r--",
+      "owner": "root",
+      "block_pointers": [],
+      "is_directory": true,
+      "parent_inode": 0,
+      "directory_entries": {
+        "documents": 2
+      },
+      "is_allocated": true
+    },
+    "2": {
+      "inode_id": 2,
+      "filename": "documents",
+      "file_size": 0,
+      "created_time": 1776182133.767305,
+      "modified_time": 1776182133.767305,
+      "accessed_time": 1776182133.767305,
+      "permissions": "rw-r--r--",
+      "owner": "root",
+      "block_pointers": [],
+      "is_directory": true,
+      "parent_inode": 1,
+      "directory_entries": {
+        "doc_0.txt": 3,
+        "doc_1.txt": 4,
+        "doc_2.txt": 5
+      },
+      "is_allocated": true
+    },
+    "3": {
+      "inode_id": 3,
+      "filename": "doc_0.txt",
+      "file_size": 2048,
+      "created_time": 1776182133.767351,
+      "modified_time": 1776182133.767392,
+      "accessed_time": 1776182133.767351,
+      "permissions": "rw-r--r--",
+      "owner": "root",
+      "block_pointers": [
+        0
+      ],
+      "is_directory": false,
+      "parent_inode": 2,
+      "directory_entries": {},
+      "is_allocated": true
+    },
+    "4": {
+      "inode_id": 4,
+      "filename": "doc_1.txt",
+      "file_size": 2048,
+      "created_time": 1776182133.767417,
+      "modified_time": 1776182133.767428,
+      "accessed_time": 1776182133.767417,
+      "permissions": "rw-r--r--",
+      "owner": "root",
+      "block_pointers": [
+        1
+      ],
+      "is_directory": false,
+      "parent_inode": 2,
+      "directory_entries": {},
+      "is_allocated": true
+    },
+    "5": {
+      "inode_id": 5,
+      "filename": "doc_2.txt",
+      "file_size": 2048,
+      "created_time": 1776182133.767445,
+      "modified_time": 1776182133.767451,
+      "accessed_time": 1776182133.767445,
+      "permissions": "rw-r--r--",
+      "owner": "root",
+      "block_pointers": [
+        2
+      ],
+      "is_directory": false,
+      "parent_inode": 2,
+      "directory_entries": {},
+      "is_allocated": true
+    }
+  },
+  "free_space": {
+    "total_blocks": 512,
+    "allocated_blocks": 3,
+    "free_blocks": 509,
+    "fragmentation_ratio": 0.005859375,
+    "num_gaps": 1,
+    "largest_gap": 509,
+    "smallest_gap": 509,
+    "largest_gap_blocks": 509
+  },
+  "statistics": {
+    "filesystem": {
+      "total_blocks": 512,
+      "allocated_blocks": 3,
+      "free_blocks": 509,
+      "block_size": 4096,
+      "total_inodes": 6,
+      "allocated_inodes": 6,
+      "total_capacity_mb": 2.0
+    },
+    "free_space": {
+      "total_blocks": 512,
+      "allocated_blocks": 3,
+      "free_blocks": 509,
+      "fragmentation_ratio": 0.005859375,
+      "num_gaps": 1,
+      "largest_gap": 509,
+      "smallest_gap": 509,
+      "largest_gap_blocks": 509
+    },
+    "cache": {
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "hit_rate": 0,
+      "cache_size": 3,
+      "max_cache_size": 128,
+      "read_operations": 0,
+      "write_operations": 3,
+      "avg_read_time_ms": 0,
+      "avg_write_time_ms": 0.0038941701253255205
+    },
+    "total_operations": 8,
+    "recovery_points": 0
+  },
+  "operation_log": [
+    {
+      "operation": "directory_created",
+      "dirname": "home",
+      "inode_id": 1
+    },
+    {
+      "operation": "directory_created",
+      "dirname": "documents",
+      "inode_id": 2
+    },
+    {
+      "operation": "file_created",
+      "filename": "doc_0.txt",
+      "file_size": 2048,
+      "blocks_allocated": [
+        0
+      ]
+    },
+    {
+      "operation": "file_written",
+      "inode_id": 3,
+      "blocks_written": 1
+    },
+    {
+      "operation": "file_created",
+      "filename": "doc_1.txt",
+      "file_size": 2048,
+      "blocks_allocated": [
+        1
+      ]
+    },
+    {
+      "operation": "file_written",
+      "inode_id": 4,
+      "blocks_written": 1
+    },
+    {
+      "operation": "file_created",
+      "filename": "doc_2.txt",
+      "file_size": 2048,
+      "blocks_allocated": [
+        2
+      ]
+    },
+    {
+      "operation": "file_written",
+      "inode_id": 5,
+      "blocks_written": 1
+    }
+  ]
+}
