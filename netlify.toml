@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  # No build command: the project's runtime is Python/Flask and runs locally.
+  # Netlify serves a static landing page from `public/` describing the project.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
